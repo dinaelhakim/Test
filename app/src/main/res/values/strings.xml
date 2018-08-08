@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Tests</string>
+    <string name="dial_btn_title">Send Implicit Intent With Action Dial</string>
+    <string name="implicit_intent_title">Implicit Intent</string>
+
+    <string-array name="main_topics_list">
+        <item>Implicit Intents</item>
+        <item>Test 2</item>
+    </string-array>
 </resources>
