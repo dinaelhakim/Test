@@ -1,8 +1,6 @@
 package com.example.dinaelhakim.myapplication.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -12,7 +10,7 @@ import com.example.dinaelhakim.myapplication.adapters.MainRecyclerViewAdapter;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private RecyclerView mainRecyclerView;
     private String[] mainTopicsList;
@@ -27,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         mainRecyclerView.setAdapter(new MainRecyclerViewAdapter(mainTopicsList, createRecyclerViewActions()));
         mainRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mainRecyclerView.setHasFixedSize(true);  //to increase performance
-
     }
 
     private ArrayList<View.OnClickListener> createRecyclerViewActions() {
@@ -35,8 +32,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewListenersList.add(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ImplicitIntentActivity.class);
-                startActivity(intent);
+                navigateTo(ImplicitIntentActivity.class);
+            }
+        });
+        recyclerViewListenersList.add(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigateTo(MenuActivity.class);
             }
         });
         return recyclerViewListenersList;

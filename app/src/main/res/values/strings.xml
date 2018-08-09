@@ -1,10 +1,22 @@
 <resources>
-    <string name="app_name">Tests</string>
+    <string name="app_name">x</string>
     <string name="dial_btn_title">Send Implicit Intent With Action Dial</string>
     <string name="implicit_intent_title">Implicit Intent</string>
+    <string name="first_item">Main Activity</string>
+    <string name="second_item">Implicit Intent Activity</string>
+    <string name="third_item">Menu Activity</string>
+    <string name="menu_attributes_declaration">
+        <b>never:</b> don\'t show the menu item in title bar ever never.
+        \n
+        \n
+        <b>if Room:</b> showing item depends on its length. if it\'s enough to be shown OK,  else keep it inside menu.
+        \n
+        \n
+        <b>always:</b> the opposite of never.
+    </string>
 
     <string-array name="main_topics_list">
-        <item>Implicit Intents</item>
-        <item>Test 2</item>
+        <item>Implicit Activity</item>
+        <item>Menu Activity</item>
     </string-array>
 </resources>
