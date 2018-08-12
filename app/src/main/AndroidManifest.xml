@@ -9,20 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/title_home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.ImplicitIntentActivity">
+        <activity
+            android:name=".activities.ImplicitIntentActivity"
+            android:label="@string/title_implicit_screen">
             <intent-filter>
                 <action android:name="android.intent.action.DIAL" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MenuActivity" />
+        <activity
+            android:name=".activities.MenuActivity"
+            android:label="@string/title_menu_screen" />
         <activity android:name=".activities.BaseActivity"></activity>
     </application>
 

@@ -14,6 +14,9 @@
         \n
         <b>always:</b> the opposite of never.
     </string>
+    <string name="title_home">Home</string>
+    <string name="title_implicit_screen">Implicit Test</string>
+    <string name="title_menu_screen">Menu Test</string>
 
     <string-array name="main_topics_list">
         <item>Implicit Activity</item>
